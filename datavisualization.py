@@ -31,6 +31,10 @@ def visualize_data():
     fig_2.update_xaxes(showgrid=False)
     fig_2.update_yaxes(showgrid=False)
     fig_2.show()
+
+    data.to_csv('walmart_cleansed_data.csv', index=False)
+    
+    return data
     
 
 visualize_data()
