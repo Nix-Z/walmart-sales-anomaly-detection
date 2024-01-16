@@ -22,11 +22,6 @@ pipeline{
                 sh 'python3 datavisualization.py'
             }
         }
-        stage("Feature Engineering"){
-            steps{
-                sh 'python3 feature_engineering.py'
-            }
-        }
     }
     post{
        
